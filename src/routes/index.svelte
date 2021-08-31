@@ -56,12 +56,12 @@
 				<li>
 					<h2>
 						<a href={`${path.replace('.md', '')}`}>{title} </a>
-						<span>
-							{new Date(date).toDateString()}
-						</span>
 					</h2>
+					<h3>
+						{new Date(date).toDateString()}
+					</h3>
 
-					<div>
+					<div class="tags">
 						{#each tags as tag}
 							<a class="tag" href={`/tags/${tag}`}>#{tag} </a>
 						{/each}
@@ -147,21 +147,39 @@
 		padding: 2rem;
 		height: 100%;
 	}
+	.blog .tags {
+		margin-left: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.blog .tag {
 		background-color: var(--nord9);
 		color: var(--nord6);
 		font-size: 0.85rem;
 		font-weight: 700;
-		padding: 0.3rem;
-		border-radius: 0.25rem;
-		margin-right: 0.5rem;
+		padding: 0.5rem 0.75rem;
+		border-radius: 0.75rem;
+		margin: 0 0.5rem 0.5rem 0;
+	}
+	.blog .tag:hover {
+		background-color: var(--nord15);
+	}
+	.blog h2 {
+		margin: 0 0 1rem 0;
+	}
+	.blog h3 {
+		margin: 0 0 1rem 1rem;
+		font-size: 1rem;
+	}
+	.blog li {
+		margin-bottom: 2rem;
 	}
 
 	/* breakpoints */
 	@media only screen and (min-width: 600px) {
 		main {
 			display: grid;
-			grid-template-columns: 2fr 3fr;
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 </style>

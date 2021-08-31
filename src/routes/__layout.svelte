@@ -14,7 +14,6 @@
 <style>
 	.wrapper {
 		display: grid;
-		width: 100vw;
 		min-height: 100vh;
 		grid-template-rows: auto 1fr auto;
 	}

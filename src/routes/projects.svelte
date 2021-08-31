@@ -7,11 +7,12 @@
 
 	let projects = [
 		{
-			title: 'Aikido Website',
+			title: 'Asheville Aikikai',
 			image: aikidoScreenshot,
 			url: 'www.example.com',
 			description: 'A landing page for a martial arts dojo',
-			text: 'Built in SvelteKit'
+			text:
+				'I built this site on spec for a local dojo in in SvelteKit. Orignally designed to be a static site, I later converted it to server-side rendering to accomodate a backend CMS, which I did in Sanity to allow stakeholders to dynamically edit content.'
 		},
 		{
 			title: 'Bacchus Atlas Expanded',
@@ -32,7 +33,30 @@
 	];
 </script>
 
-<h1>Projects</h1>
-{#each projects as project}
-	<Project {project} class="project" />
-{/each}
+<article>
+	<h1>Projects</h1>
+	<section>
+		{#each projects as project}
+			<Project {project} />
+		{/each}
+	</section>
+</article>
+
+<style>
+	article {
+		display: grid;
+	}
+	article h1 {
+		margin: 0;
+		padding: 2rem 0;
+		font-size: 4rem;
+		text-align: center;
+		background-color: var(--nord1);
+		border-bottom: 2px solid var(--nord3);
+		color: var(--nord6);
+	}
+
+	/* article section {
+		padding: 2rem;
+	} */
+</style>
