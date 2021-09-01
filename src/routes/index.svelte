@@ -27,6 +27,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Aaron Hubbard Web Dev</title>
+</svelte:head>
+
 <main>
 	<section class="bio">
 		<figure>
@@ -138,7 +142,6 @@
 	.bio section {
 		margin-top: 2rem;
 	}
-
 	/* blog */
 	.blog {
 		background-color: var(--nord4);

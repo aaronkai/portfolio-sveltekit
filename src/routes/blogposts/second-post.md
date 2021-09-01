@@ -10,6 +10,8 @@ date: 2021-08-04
 
 # {title}
 
+## Published {new Date(date).toDateString()}
+
 It's been a weird month.
 
 ## Vacation

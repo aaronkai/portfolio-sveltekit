@@ -33,6 +33,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Projects</title>
+</svelte:head>
+
 <article>
 	<h1>Projects</h1>
 	<section>

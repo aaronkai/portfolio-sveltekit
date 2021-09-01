@@ -1,7 +1,13 @@
 <div class="grid">
-  <article>
-    <slot></slot>
-
-  </article>
+	<article>
+		<slot />
+	</article>
 </div>
 
+<style>
+	article {
+		padding: 2rem;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+</style>
