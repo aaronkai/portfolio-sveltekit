@@ -19,7 +19,7 @@
 <style>
 	nav {
 		display: grid;
-		border-bottom: 2px solid var(--nord1);
+		border-bottom: 4px solid var(--fuchsia);
 		grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
 	}
 	a {
@@ -30,13 +30,12 @@
 		font-family: 'Rubik', sans-serif;
 		font-weight: 700;
 		font-size: 1.25rem;
-		color: var(--nord1);
+		color: var(--off-white);
 		height: 100%;
-		background-color: var(--nord6);
-		height: 3rem;
-		padding: 0.5rem;
+		background-color: var(--off-black);
+		padding: 1rem;
 	}
 	a:hover {
-		background-color: var(--nord7);
+		color: var(--fuchsia);
 	}
 </style>

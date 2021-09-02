@@ -83,11 +83,7 @@
 		column-gap: 2rem;
 		justify-items: center;
 		height: 100%;
-		background-color: var(--nord6);
-	}
-
-	main:first-child {
-		padding-left: 2rem;
+		background-color: var(--off-white);
 	}
 
 	h1,
@@ -97,7 +93,7 @@
 	li,
 	a {
 		font-family: 'Rubik', sans-serif;
-		color: var(--nord0);
+		color: var(--off-black);
 	}
 	h1 {
 		font-size: 3rem;
@@ -121,21 +117,22 @@
 
 	.bio {
 		padding-top: 3rem;
+		padding-left: 2rem;
 	}
 	.bio h1 {
-		font-size: 4rem;
-		color: var(--nord0);
-		margin: 1rem 0;
+		font-size: 5rem;
+		color: var(--purple);
+		margin: 2rem 0 0.5rem 0;
 	}
 	.bio h2 {
-		font-size: 3rem;
-		margin: 1rem 0;
-		color: var(--nord7);
+		font-size: 2.5rem;
+		margin: 0.5rem 0;
+		color: var(--dark-mint);
 	}
 	.bio h3 {
 		font-size: 1.5rem;
-		margin: 1rem 0;
-		color: var(--nord9);
+		margin: 0.5rem 0;
+		color: var(--dark-mint);
 		font-weight: 700;
 		text-transform: capitalize;
 	}
@@ -144,7 +141,7 @@
 	}
 	/* blog */
 	.blog {
-		background-color: var(--nord4);
+		background-color: var(--off-black);
 		/* grid-column: span 2; */
 		width: 100%;
 		padding: 2rem;
@@ -156,8 +153,8 @@
 		flex-wrap: wrap;
 	}
 	.blog .tag {
-		background-color: var(--nord9);
-		color: var(--nord6);
+		background-color: var(--mint);
+		color: var(--off-black);
 		font-size: 0.85rem;
 		font-weight: 700;
 		padding: 0.5rem 0.75rem;
@@ -165,17 +162,26 @@
 		margin: 0 0.5rem 0.5rem 0;
 	}
 	.blog .tag:hover {
-		background-color: var(--nord15);
+		background-color: var(--fuchsia);
 	}
 	.blog h2 {
 		margin: 0 0 1rem 0;
+		color: var(--off-white);
 	}
 	.blog h3 {
 		margin: 0 0 1rem 1rem;
 		font-size: 1rem;
+		color: var(--off-white);
 	}
 	.blog li {
 		margin-bottom: 2rem;
+		color: var(--off-white);
+	}
+	.blog a {
+		color: var(--off-white);
+	}
+	.blog h1 {
+		color: var(--off-white);
 	}
 
 	/* breakpoints */

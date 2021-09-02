@@ -38,29 +38,24 @@
 </svelte:head>
 
 <article>
-	<h1>Projects</h1>
-	<section>
-		{#each projects as project}
-			<Project {project} />
-		{/each}
-	</section>
+	{#each projects as project}
+		<Project {project} />
+	{/each}
 </article>
 
 <style>
 	article {
 		display: grid;
+		row-gap: 4rem;
+		padding-bottom: 4rem;
+		background-color: var(--off-white);
+		padding-top: 2rem;
 	}
 	article h1 {
 		margin: 0;
-		padding: 2rem 0;
-		font-size: 4rem;
-		text-align: center;
-		background-color: var(--nord1);
-		border-bottom: 2px solid var(--nord3);
-		color: var(--nord6);
-	}
-
-	/* article section {
 		padding: 2rem;
-	} */
+		font-size: 5rem;
+		color: var(--purple);
+		background-color: var(--off-white);
+	}
 </style>

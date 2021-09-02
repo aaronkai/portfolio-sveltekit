@@ -4,10 +4,10 @@
 
 <style>
 	footer {
-		background-color: var(--nord5);
+		background-color: var(--off-black);
 		display: grid;
 		align-items: center;
-		border-top: 2px solid var(--nord1);
+		border-top: 2px solid var(--mint);
 	}
 
 	a {
@@ -15,7 +15,7 @@
 		font-family: 'Rubik', sans-serif;
 		font-weight: 400;
 		font-size: 1rem;
-		color: var(--nord0);
+		color: var(--off-white);
 		text-align: center;
 		margin: 1rem;
 	}
