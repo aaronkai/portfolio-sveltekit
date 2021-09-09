@@ -1,5 +1,5 @@
 ---
-title: Setting up NeoVim to code in Svelte
+title: Setting up NeoVim to Code in Svelte
 tags:
   - svelteKit
   - vim
