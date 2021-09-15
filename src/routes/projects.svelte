@@ -4,8 +4,17 @@
 	import aikidoScreenshot from '$lib/assets/aikikai.png';
 	import bacchusV1Screenshot from '$lib/assets/bacchus_atlas_v1_screencap.png';
 	import bacchusExpandedScreenshot from '$lib/assets/bacchus_atlas_expanded_screencap.png';
+	import siteGeistScreenshot from '$lib/assets/siteGeist.png';
 
 	let projects = [
+		{
+			title: 'SiteGeist',
+			image: siteGeistScreenshot,
+			url: 'https://siteGeist.netlify.app/',
+			description: 'A Pre-registration page for a fake social media venture',
+			text:
+				'I wanted to try out SupaBase as a potential SaS-backend one-stop-shop. I followed along with their Svelte tutorial, but ported it over to SvelteKit because I like the DX better. I had a lot of fun doing the design for this one. I used the Dracula colortheme that I am in love with right now, and I decided to drop TailwindCSS and code it in raw CSS because that really feels like how SvelteKit wants it (and Tailwind was breaking the SvelteKit HMR).'
+		},
 		{
 			title: 'Asheville Aikikai',
 			image: aikidoScreenshot,

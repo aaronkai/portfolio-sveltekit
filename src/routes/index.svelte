@@ -49,6 +49,10 @@
 				more about making modern websites.
 			</p>
 			<p>To see some examples of my work, <a href="/projects">check out my projects</a>.</p>
+			<p>
+				If you want to hear me ramble about what I'm working on right now, check out my blog posts
+				-->
+			</p>
 			<p>Drop me a line using the contact link.</p>
 		</section>
 	</section>

@@ -48,6 +48,7 @@
 		margin: 0 0 1.5rem 0;
 		font-size: 2rem;
 		color: var(--dark-mint);
+		text-transform: capitalize;
 	}
 	p {
 		margin: 0 0 2rem 0;
