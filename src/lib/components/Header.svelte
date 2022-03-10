@@ -1,16 +1,15 @@
 <script>
 	import Icon from 'svelte-awesome';
-	import { github, linkedinSquare } from 'svelte-awesome/icons';
+	import { envelope, github, linkedinSquare } from 'svelte-awesome/icons';
 </script>
 
 <nav>
 	<a href="/">Home</a>
 	<a href="/projects">Projects</a>
-	<a href="mailto:hotel.kilo.alpha@gmail.com">Contact</a>
+	<a href="mailto:hotel.kilo.alpha@gmail.com"><Icon scale="2" data={envelope} /></a>
 	<a href="https://www.github.com/aaronkai" target="_blank" rel="noreferrer"
 		><Icon scale="2" data={github} /></a
 	>
-	<!-- <Icon data={beer} /> -->
 	<a href="https://www.linkedin.com/in/aaron-hubbard/" target="_blank" rel="noreferrer">
 		<Icon scale="2" data={linkedinSquare} />
 	</a>
