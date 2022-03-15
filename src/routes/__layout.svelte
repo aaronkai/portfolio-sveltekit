@@ -1,9 +1,10 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import '$lib/styles/global.css';
 </script>
 
-<div class="wrapper">
+<div class="grid min-h-screen wrapper">
 	<Header />
 	<div class="inner_wrapper">
 		<slot />
@@ -13,8 +14,6 @@
 
 <style>
 	.wrapper {
-		display: grid;
-		min-height: 100vh;
 		grid-template-rows: auto 1fr auto;
 	}
 </style>

@@ -1,4 +1,5 @@
 <script context="module">
+	//fetch all posts
 	const allPosts = import.meta.glob('./blogposts/*.md');
 	let body = [];
 	for (let path in allPosts) {
@@ -8,12 +9,25 @@
 			})
 		);
 	}
+	//fetch all projects
+	let body2 = [];
+	const allProjects = import.meta.glob('./projects/*.md');
+	for (let path in allProjects) {
+		body2.push(
+			allProjects[path]().then(({ metadata }) => {
+				return { path, metadata };
+			})
+		);
+	}
 
+	// feed posts to page as props
 	export const load = async () => {
 		const posts = await Promise.all(body);
+		const projects = await Promise.all(body2);
 		return {
 			props: {
-				posts
+				posts,
+				projects
 			}
 		};
 	};
@@ -21,9 +35,17 @@
 
 <script>
 	import Selfie from '$lib/assets/self2.png';
-	export let posts;
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
+	// get props
+	export let posts, projects;
+	// sort blogposts by date and return most current 3
 	const dateSortedPosts = posts.sort((post1, post2) => {
 		return new Date(post2.metadata.date) - new Date(post1.metadata.date);
+	});
+	const mostRecentPosts = dateSortedPosts.slice(0, 3);
+	//pick a project to be the featured project
+	const [featuredProject] = projects.filter((project) => {
+		return project.metadata.title === 'Spooky Sets';
 	});
 </script>
 
@@ -31,18 +53,20 @@
 	<title>Aaron Hubbard Web Dev</title>
 </svelte:head>
 
-<main>
-	<section class="bio">
-		<figure>
-			<img src={Selfie} alt="selfie" />
-		</figure>
+<main class="grid h-full gap-12 bg-stone-200">
+	<section class="grid gap-8 p-5">
+		<header class="grid gap-4">
+			<figure class="grid items-center justify-items-center">
+				<img class="max-h-[30vh]" src={Selfie} alt="selfie" />
+			</figure>
+			<h1 class="font-bold text-7xl text-fuchsia-700">Aaron Hubbard</h1>
+			<h2 class="text-4xl font-bold text-emerald-700">Jamstack Developer</h2>
 
-		<header>
-			<h1>Aaron Hubbard</h1>
-			<h2>Jamstack Developer</h2>
-			<h3>Building fast and functional things for the web</h3>
+			<h3 class="text-2xl font-bold capitalize text-emerald-700">
+				Building fast and functional things for the web
+			</h3>
 		</header>
-		<section>
+		<section class="grid gap-3 font-sans text-xl text-stone-900">
 			<p>
 				Hi! I'm Aaron Hubbard, a family-man and web-developer based in Asheville, NC. By day, I'm an
 				application administrator for NOAA's CLASS project. In my free-time, I'm learning more and
@@ -51,148 +75,34 @@
 			<p>To see some examples of my work, <a href="/projects">check out my projects</a>.</p>
 			<p>
 				If you want to hear me ramble about what I'm working on right now, check out my blog posts
-				-->
 			</p>
 			<p>Drop me a line using the contact link.</p>
 		</section>
 	</section>
 
-	<section class="blog">
-		<h1>Blogposts</h1>
-		<ul>
-			{#each dateSortedPosts as { path, metadata: { title, tags, date } }}
+	<section class="px-5 py-16 blog bg-stone-800 text-stone-100">
+		<h1 class="mb-10 text-5xl font-bold text-fuchsia-400">Most Recent Blogposts</h1>
+		<ul class="grid gap-6">
+			{#each mostRecentPosts as { path, metadata: { title, tags, date } }}
 				<li>
-					<h2>
+					<h2 class="mb-3 text-2xl font-bold underline text-emerald-300">
 						<a href={`${path.replace('.md', '')}`}>{title} </a>
 					</h2>
-					<h3>
-						{new Date(date).toDateString()}
-					</h3>
-
-					<div class="tags">
+					<div class="flex ">
 						{#each tags as tag}
-							<a class="tag" href={`/tags/${tag}`}>#{tag} </a>
+							<a
+								class="px-3 py-1 ml-3 rounded-sm text-stone-900 bg-fuchsia-300"
+								href={`/tags/${tag}`}
+								>#{tag}
+							</a>
 						{/each}
 					</div>
 				</li>
 			{/each}
 		</ul>
 	</section>
+	<section class="px-3">
+		<h1 class="mb-6 text-5xl font-bold text-fuchsia-700">Featured Project</h1>
+		<ProjectCard project={featuredProject} />
+	</section>
 </main>
-
-<style>
-	main {
-		display: grid;
-		row-gap: 4rem;
-		column-gap: 2rem;
-		justify-items: center;
-		height: 100%;
-		background-color: var(--off-white);
-	}
-
-	h1,
-	h2,
-	h3,
-	p,
-	li,
-	a {
-		font-family: 'Rubik', sans-serif;
-		color: var(--off-black);
-	}
-	h1 {
-		font-size: 3rem;
-	}
-	p {
-		font-size: 1.25rem;
-		font-weight: 400;
-	}
-
-	/* sections */
-
-	/* bio */
-	figure {
-		display: grid;
-		justify-items: center;
-		align-items: center;
-	}
-	figure img {
-		max-height: 30vh;
-	}
-
-	.bio {
-		padding-top: 3rem;
-		padding-left: 2rem;
-	}
-	.bio h1 {
-		font-size: 5rem;
-		color: var(--purple);
-		margin: 2rem 0 0.5rem 0;
-	}
-	.bio h2 {
-		font-size: 2.5rem;
-		margin: 0.5rem 0;
-		color: var(--dark-mint);
-	}
-	.bio h3 {
-		font-size: 1.5rem;
-		margin: 0.5rem 0;
-		color: var(--dark-mint);
-		font-weight: 700;
-		text-transform: capitalize;
-	}
-	.bio section {
-		margin-top: 2rem;
-	}
-	/* blog */
-	.blog {
-		background-color: var(--off-black);
-		/* grid-column: span 2; */
-		width: 100%;
-		padding: 2rem;
-		height: 100%;
-	}
-	.blog .tags {
-		margin-left: 1rem;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.blog .tag {
-		background-color: var(--mint);
-		color: var(--off-black);
-		font-size: 0.85rem;
-		font-weight: 700;
-		padding: 0.5rem 0.75rem;
-		border-radius: 0.75rem;
-		margin: 0 0.5rem 0.5rem 0;
-	}
-	.blog .tag:hover {
-		background-color: var(--fuchsia);
-	}
-	.blog h2 {
-		margin: 0 0 1rem 0;
-		color: var(--off-white);
-	}
-	.blog h3 {
-		margin: 0 0 1rem 1rem;
-		font-size: 1rem;
-		color: var(--off-white);
-	}
-	.blog li {
-		margin-bottom: 2rem;
-		color: var(--off-white);
-	}
-	.blog a {
-		color: var(--off-white);
-	}
-	.blog h1 {
-		color: var(--off-white);
-	}
-
-	/* breakpoints */
-	@media only screen and (min-width: 600px) {
-		main {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-		}
-	}
-</style>

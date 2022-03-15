@@ -1,22 +1,8 @@
-<footer>
-	<a href="http://www.aaronhubbard.dev">Aaron Hubbard Web Dev&copy; 2021</a>
+<footer
+	class="grid items-center p-3 border-t-2 bg-stone-800 justify-items-center border-emerald-500 font-body"
+>
+	<a
+		class="m-1 font-sans no-underline text-stone-200 align-center"
+		href="http://www.aaronhubbard.dev">Aaron Hubbard Web Dev&copy; 2021</a
+	>
 </footer>
-
-<style>
-	footer {
-		background-color: var(--off-black);
-		display: grid;
-		align-items: center;
-		border-top: 2px solid var(--mint);
-	}
-
-	a {
-		text-decoration: none;
-		font-family: 'Rubik', sans-serif;
-		font-weight: 400;
-		font-size: 1rem;
-		color: var(--off-white);
-		text-align: center;
-		margin: 1rem;
-	}
-</style>

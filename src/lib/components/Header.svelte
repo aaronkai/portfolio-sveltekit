@@ -3,9 +3,10 @@
 	import { envelope, github, linkedinSquare } from 'svelte-awesome/icons';
 </script>
 
-<nav>
+<nav class="grid border-b-2 border-fuchsia-700 grid-cols-[2fr_2fr_2fr_1fr_1fr_1fr]">
 	<a href="/">Home</a>
 	<a href="/projects">Projects</a>
+	<a href="/blogposts">Posts</a>
 	<a href="mailto:hotel.kilo.alpha@gmail.com"><Icon scale="2" data={envelope} /></a>
 	<a href="https://www.github.com/aaronkai" target="_blank" rel="noreferrer"
 		><Icon scale="2" data={github} /></a
@@ -16,12 +17,12 @@
 </nav>
 
 <style>
-	nav {
+	/* nav {
 		display: grid;
 		border-bottom: 4px solid var(--fuchsia);
 		grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
-	}
-	a {
+	} */
+	/* a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -36,5 +37,8 @@
 	}
 	a:hover {
 		color: var(--fuchsia);
+	} */
+	a {
+		@apply flex items-center justify-center no-underline font-sans font-bold text-lg text-stone-200 bg-stone-800 p-3 h-full;
 	}
 </style>
