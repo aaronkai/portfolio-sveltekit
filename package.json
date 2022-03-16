@@ -1,5 +1,5 @@
 {
-	"name": "Svelte Portfolio",
+	"name": "Svelte_Portfolio",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
