@@ -1,6 +1,5 @@
 <script>
 	export let project;
-	console.log({ project });
 </script>
 
 <div class="grid my-3 border rounded shadow bg-stone-100">
