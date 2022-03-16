@@ -36,7 +36,7 @@
 <html lang="en">
 	<body>
 		<div
-			class="grid items-center justify-center gap-16 px-6 pt-16 pb-4 bg-stone-200 wrapper md:p-12"
+			class="grid items-center justify-center gap-16 px-6 pt-16 pb-4 bg-stone-100 wrapper md:p-12"
 		>
 			<h1 class="font-extrabold text-stone-800 text-7xl">All Projects</h1>
 			<div class="grid gap-12 lg:grid-cols-2 2xl:grid-cols-3">

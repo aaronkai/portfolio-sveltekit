@@ -4,7 +4,7 @@
 	import '$lib/styles/global.css';
 </script>
 
-<div class="grid min-h-screen justify-items-center wrapper bg-stone-200">
+<div class="grid min-h-screen justify-items-center wrapper bg-stone-100">
 	<Header />
 	<div class="max-w-screen-xl inner_wrapper ">
 		<slot />

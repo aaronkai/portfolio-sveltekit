@@ -24,6 +24,6 @@
 
 <style>
 	a {
-		@apply flex items-center justify-center px-3 py-1 font-bold uppercase transition duration-300 ease-in-out transform rounded text-stone-100 bg-emerald-600 hover:bg-fuchsia-300 hover:text-stone-900 hover:scale-110;
+		@apply flex items-center justify-center px-3 py-1 font-bold uppercase transition duration-300 ease-in-out transform rounded text-stone-100 bg-emerald-600 hover:bg-emerald-800  hover:scale-105 shadow;
 	}
 </style>

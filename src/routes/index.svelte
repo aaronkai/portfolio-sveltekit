@@ -53,29 +53,31 @@
 	<title>Aaron Hubbard Web Dev</title>
 </svelte:head>
 
-<main class="grid h-full px-3 last:py-9 bg-stone-200 gap-9">
-	<section class="grid md:grid-cols-2">
-		<header class="grid gap-8">
-			<figure class="grid items-center justify-items-center">
-				<img class="max-h-[40vh]" src={Selfie} alt="selfie" />
-			</figure>
-			<section class="grid gap-3 text-stone-800">
-				<h1 class="text-2xl font-bold text-stone-800 max-w-[70vw]">
-					I'm Aaron Hubbard, a Jamstack Developer, a dad, and a middling fingerpicker.
-				</h1>
-				<p>
-					By day, I'm an application administrator for NOAA's CLASS project. In my free-time, I'm
-					learning more and more about making modern websites.
-				</p>
-			</section>
-		</header>
+<main
+	class="grid items-start h-full px-3 last:py-9 bg-stone-100 gap-9 md:grid-cols-2 md:gap-y-12 md:gap-y-16"
+>
+	<section class="grid md:grid-cols-[auto_1fr] gap-12 items-center md:col-span-2">
+		<figure class="grid items-center justify-items-center">
+			<img class="max-h-[40vh]" src={Selfie} alt="selfie" />
+		</figure>
+		<div class="grid gap-6 text-stone-800">
+			<h1 class="text-2xl md:text-5xl font-bold text-stone-800 max-w-[70vw]">
+				I'm Aaron Hubbard, a <a href="https://github.com/aaronkai">Jamstack Developer</a>, a
+				<a href="https://www.instagram.com/p/CVJmDN-AFbQwIwD9kF2dv9l8IDtB-NtVdJMdJ40/">dad</a>, and
+				a
+				<a href="https://photos.app.goo.gl/pb8RjhBWJ6HPkeMx8">middling fingerpicker</a>.
+			</h1>
+			<p class="md:text-xl max-w-prose">
+				By day, I'm an application administrator for NOAA's CLASS project. In my free-time, I'm
+				learning more and more about making modern websites.
+			</p>
+		</div>
 	</section>
-
 	<section class="grid gap-3">
 		<header class="grid grid-cols-[3fr_1fr]">
-			<h1 class="text-3xl font-bold text-stone-800">Latest</h1>
+			<h1 class="text-3xl font-bold text-stone-800">Latest Posts</h1>
 			<a
-				class="flex items-center justify-center font-bold rounded text-stone-100 bg-emerald-600"
+				class="flex items-center justify-center font-bold rounded shadow text-stone-100 bg-emerald-600"
 				href="/blogposts">Archive ></a
 			>
 		</header>
@@ -93,9 +95,9 @@
 	</section>
 	<section class="grid gap-3">
 		<header class="grid grid-cols-[2fr_1fr]">
-			<h1 class="text-3xl font-bold text-stone-800">Latest Project</h1>
+			<h1 class="text-3xl font-bold text-stone-800">Project Highlight</h1>
 			<a
-				class="flex items-center justify-center font-bold rounded text-stone-100 bg-emerald-600"
+				class="flex items-center justify-center font-bold rounded shadow text-stone-100 bg-emerald-600"
 				href="/blogposts">All Projects ></a
 			>
 		</header>
@@ -105,6 +107,9 @@
 
 <style>
 	header a {
-		@apply flex items-center justify-center px-3 py-1 font-bold  transition duration-300 ease-in-out transform rounded text-stone-100 bg-emerald-600 hover:bg-fuchsia-300 hover:text-stone-900 hover:scale-110;
+		@apply flex items-center justify-center px-3 py-1 font-bold  transition duration-300 ease-in-out transform rounded text-stone-100 bg-emerald-600 hover:bg-emerald-800 hover:scale-105;
+	}
+	h1 a {
+		@apply underline text-emerald-600 decoration-emerald-400 decoration-2 underline-offset-4 transition duration-300 ease-in-out transform hover:text-emerald-800;
 	}
 </style>

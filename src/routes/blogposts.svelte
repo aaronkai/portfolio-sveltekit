@@ -2,7 +2,6 @@
 	//fetch all posts
 	const allPosts = import.meta.glob('./blogposts/*.md');
 	let body = [];
-	let body2 = [];
 	for (let path in allPosts) {
 		body.push(
 			allPosts[path]().then((post) => {
@@ -46,7 +45,7 @@
 		<h1 class="mt-8 text-2xl">Blogposts</h1>
 		<fieldset class="p-4 border border-gray-500">
 			<legend class="text-xl font-bold">Table of Contents</legend>
-			<ul role="list" class="ml-4 font-bold list-disc ">
+			<ul class="ml-4 font-bold list-disc ">
 				{#each dateSortedPosts as post}
 					<li class="py-1 underline ">
 						<a class="text-blue-800" href={post.metadata.url}>{post.metadata.title}</a>
