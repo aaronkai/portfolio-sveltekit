@@ -1,5 +1,6 @@
 <script>
 	export let project;
+	console.log({ project });
 </script>
 
 <div class="grid my-3 border rounded shadow bg-stone-100">
@@ -16,7 +17,7 @@
 		</h2>
 		<p class="text-center text-stone-900 ">{project.metadata.description}</p>
 		<div class="flex justify-around">
-			<a href={project.metadata.url}>Details</a>
+			<a href={project.path.slice(2, -3)}>Details</a>
 			<a href={project.metadata.link}>Go To Site</a>
 		</div>
 	</section>

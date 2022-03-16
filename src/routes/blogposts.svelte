@@ -28,7 +28,7 @@
 	/>
 </svelte:head>
 
-<main class="grid gap-16 py-6 m-auto max-w-prose">
+<main class="grid gap-16 p-6 max-w-prose">
 	<section class="grid gap-8">
 		<h1 class="font-extrabold text-stone-800 text-7xl">Blogposts</h1>
 		<fieldset class="p-4 border border-gray-500">
