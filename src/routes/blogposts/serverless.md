@@ -7,7 +7,7 @@ tags:
 
 date: 2022-01-28 16:30:00
 title: Serverless v0.1
-description: Wherein a new dev learns about serverless tech
+description: Wherein a new dev learns about serverless tech.
 ---
 
 ## I didn't actually know what serverless was 🤔

@@ -1,44 +1,32 @@
 <script>
-	import Icon from 'svelte-awesome';
-	import { envelope, github, linkedinSquare } from 'svelte-awesome/icons';
+	import GithubLogo from '$lib/components/GithubLogo.svelte';
+	import LinkedIn from './LinkedIn.svelte';
+	import Envelope from './Envelope.svelte';
+	import Logo from './Logo.svelte';
+
+	const svgClasses = 'h-6 fill-stone-800 hover:fill-emerald-500';
 </script>
 
-<nav class="grid border-b-2 border-fuchsia-700 grid-cols-[2fr_2fr_2fr_1fr_1fr_1fr]">
-	<a href="/">Home</a>
+<nav
+	class="flex flex-wrap items-end self-start justify-end py-2 border-b-2 border-emerald-700 bg-stone-100"
+>
+	<a href="/"><Logo classes="h-10 fill-stone-800 hover:fill-emerald-500" /></a>
 	<a href="/projects">Projects</a>
 	<a href="/blogposts">Posts</a>
-	<a href="mailto:hotel.kilo.alpha@gmail.com"><Icon scale="2" data={envelope} /></a>
-	<a href="https://www.github.com/aaronkai" target="_blank" rel="noreferrer"
-		><Icon scale="2" data={github} /></a
+	<a href="mailto:hotel.kilo.alpha@gmail.com"><Envelope classes={svgClasses} /></a>
+	<a href="https://www.github.com/aaronkai" target="_blank" rel="noreferrer "
+		><GithubLogo classes={svgClasses} /></a
 	>
-	<a href="https://www.linkedin.com/in/aaron-hubbard/" target="_blank" rel="noreferrer">
-		<Icon scale="2" data={linkedinSquare} />
-	</a>
+	<a href="https://www.linkedin.com/in/aaron-hubbard/" target="_blank" rel="noreferrer"
+		><LinkedIn classes={svgClasses} /></a
+	>
 </nav>
 
 <style>
-	/* nav {
-		display: grid;
-		border-bottom: 4px solid var(--fuchsia);
-		grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
-	} */
-	/* a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-decoration: none;
-		font-family: 'Rubik', sans-serif;
-		font-weight: 700;
-		font-size: 1.25rem;
-		color: var(--off-white);
-		height: 100%;
-		background-color: var(--off-black);
-		padding: 1rem;
-	}
-	a:hover {
-		color: var(--fuchsia);
-	} */
 	a {
-		@apply flex items-center justify-center no-underline font-sans font-bold text-lg text-stone-200 bg-stone-800 p-3 h-full;
+		@apply items-center flex no-underline font-sans font-bold text-lg text-stone-800 px-3 h-full hover:text-emerald-500 h-10;
+	}
+	nav :first-child {
+		@apply flex items-start justify-start grow shrink pl-2;
 	}
 </style>

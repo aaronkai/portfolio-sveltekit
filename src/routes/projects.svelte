@@ -20,7 +20,7 @@
 	};
 </script>
 
-<script lang="ts">
+<script>
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	export let projects;
 
@@ -35,14 +35,11 @@
 
 <html lang="en">
 	<body>
-		<h1 class="font-extrabold">All Projects</h1>
 		<div
-			class="grid items-center justify-center gap-16 px-6 pt-16 pb-4 bg-gray-200 wrapper md:p-12"
+			class="grid items-center justify-center gap-16 px-6 pt-16 pb-4 bg-stone-200 wrapper md:p-12"
 		>
+			<h1 class="font-extrabold text-fuchsia-700 text-7xl">All Projects</h1>
 			<div class="grid gap-12 lg:grid-cols-2 2xl:grid-cols-3">
-				<!-- {dateSortedProjects.map((project) => (
-            <ProjectCard project={project} />
-          ))} -->
 				{#each dateSortedProjects as project}
 					<ProjectCard {project} />
 				{/each}

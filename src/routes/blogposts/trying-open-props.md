@@ -5,7 +5,7 @@ tags:
 
 date: 2022-02-24 16:30:00
 title: Trying out Open-Props
-description: TBD
+description: Let's give Open-Props a shot!
 ---
 
 ## What a Month!

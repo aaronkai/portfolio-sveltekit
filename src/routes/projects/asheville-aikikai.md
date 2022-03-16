@@ -2,7 +2,7 @@
 title: Asheville Aikikai Dojo Website
 client: Self
 date: 2021-11-07 16:00:00
-img: /project/aikikai.png
+img: /projects/aikikai.png
 description: A landing page for a local martial-arts dojo build in SvelteKit with a Sanity CMS backend.
 link: https://development--asheville-aikikai-refresh.netlify.app/
 tags:

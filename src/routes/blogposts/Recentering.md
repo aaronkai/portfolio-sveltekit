@@ -6,6 +6,7 @@ tags:
   - Js30in30
   - 2022
 date: 2022-01-24 16:00:00
+description: Take a step back. Take a deep breath.
 ---
 
 ## The Holidays Are Over
