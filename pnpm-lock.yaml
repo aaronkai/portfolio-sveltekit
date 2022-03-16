@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/adapter-netlify': ^1.0.0-next.29
+  '@sveltejs/adapter-node': ^1.0.0-next.72
   '@sveltejs/kit': next
   autoprefixer: ^10.4.2
   eslint: ^8.10.0
@@ -18,7 +19,8 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-netlify': 1.0.0-next.29
-  '@sveltejs/kit': 1.0.0-next.295_svelte@3.46.4
+  '@sveltejs/adapter-node': 1.0.0-next.72
+  '@sveltejs/kit': 1.0.0-next.299_svelte@3.46.4
   autoprefixer: 10.4.2_postcss@8.4.8
   eslint: 8.10.0
   eslint-config-prettier: 8.5.0_eslint@8.10.0
@@ -127,8 +129,14 @@ packages:
       esbuild: 0.12.23
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.295_svelte@3.46.4:
-    resolution: {integrity: sha512-4pO/swXByhU+7bhNikTjh1d4QxAMP9TZ74p7sdPuyJf5cg7Zrfk1nBtaMt0R+8+5j1xfC/XWRcxa3WnhT9bQMA==}
+  /@sveltejs/adapter-node/1.0.0-next.72:
+    resolution: {integrity: sha512-+zlZM41LgluD6MI6NE2SgPe5Qee9KZfKyYu52+YAgORg+7OPfgwdOupLVlLk6wTyAbzq5lzpNMu5/qEfnCX++Q==}
+    dependencies:
+      tiny-glob: 0.2.9
+    dev: true
+
+  /@sveltejs/kit/1.0.0-next.299_svelte@3.46.4:
+    resolution: {integrity: sha512-m8VBccfX3ozgHjjz193pZbfTK02P47bqdhj07cveUEhVLwbujOVWbgblPCrNh0rkTER7z1k5hRZnWrFYaDjQJA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -951,6 +959,14 @@ packages:
       type-fest: 0.20.2
     dev: true
 
+  /globalyzer/0.1.0:
+    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
+    dev: true
+
+  /globrex/0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
+    dev: true
+
   /graceful-fs/4.2.9:
     resolution: {integrity: sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==}
     dev: true
@@ -1603,6 +1619,13 @@ packages:
 
   /text-table/0.2.0:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=}
+    dev: true
+
+  /tiny-glob/0.2.9:
+    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
+    dependencies:
+      globalyzer: 0.1.0
+      globrex: 0.1.2
     dev: true
 
   /to-regex-range/5.0.1:
