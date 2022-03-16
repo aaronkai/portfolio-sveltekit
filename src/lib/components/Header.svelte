@@ -8,7 +8,7 @@
 </script>
 
 <nav
-	class="flex flex-wrap items-end self-start justify-end py-2 border-b-2 border-emerald-700 bg-stone-100"
+	class="flex flex-wrap items-end self-start justify-end py-2 border-b-2 justify-self-stretch border-emerald-700 bg-stone-100"
 >
 	<a href="/"><Logo classes="h-10 fill-stone-800 hover:fill-emerald-500" /></a>
 	<a href="/projects">Projects</a>
