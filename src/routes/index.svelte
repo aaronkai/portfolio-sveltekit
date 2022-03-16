@@ -20,7 +20,7 @@
 		);
 	}
 
-	// feed posts to page as props
+	// feed posts & projects to page as props
 	export const load = async () => {
 		const posts = await Promise.all(body);
 		const projects = await Promise.all(body2);
@@ -54,18 +54,19 @@
 </svelte:head>
 
 <main
-	class="grid items-start h-full px-3 last:py-9 bg-stone-100 gap-9 md:grid-cols-2 md:gap-y-12 md:gap-y-16"
+	class="grid items-start h-full px-3 last:py-9 bg-stone-100 gap-9 md:grid-cols-2 md:gap-y-12 md:gap-x-12 md:p-8"
 >
 	<section class="grid md:grid-cols-[auto_1fr] gap-12 items-center md:col-span-2">
 		<figure class="grid items-center justify-items-center">
-			<img class="max-h-[40vh]" src={Selfie} alt="selfie" />
+			<img class="selfie max-h-[40vh]" src={Selfie} alt="selfie" />
 		</figure>
 		<div class="grid gap-6 text-stone-800">
 			<h1 class="text-2xl md:text-5xl font-bold text-stone-800 max-w-[70vw]">
-				I'm Aaron Hubbard, a <a href="https://github.com/aaronkai">Jamstack Developer</a>, a
+				I'm Aaron Hubbard, a good <a href="https://github.com/aaronkai">JavaScript Developer</a>, a
+				great
 				<a href="https://www.instagram.com/p/CVJmDN-AFbQwIwD9kF2dv9l8IDtB-NtVdJMdJ40/">dad</a>, and
-				a
-				<a href="https://photos.app.goo.gl/pb8RjhBWJ6HPkeMx8">middling fingerpicker</a>.
+				a middling
+				<a href="https://photos.app.goo.gl/pb8RjhBWJ6HPkeMx8"> fingerpicker</a>.
 			</h1>
 			<p class="md:text-xl max-w-prose">
 				By day, I'm an application administrator for NOAA's CLASS project. In my free-time, I'm
@@ -111,5 +112,8 @@
 	}
 	h1 a {
 		@apply underline text-emerald-600 decoration-emerald-400 decoration-2 underline-offset-4 transition duration-300 ease-in-out transform hover:text-emerald-800;
+	}
+	.selfie {
+		filter: invert(5%) sepia(7%) saturate(1181%) hue-rotate(325deg) brightness(92%) contrast(90%);
 	}
 </style>

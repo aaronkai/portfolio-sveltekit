@@ -1,8 +1,10 @@
-<div class="grid">
-	<article>
-		<slot />
-	</article>
-</div>
+<script>
+	import '$lib/styles/blog.css';
+</script>
+
+<article class="blog">
+	<slot />
+</article>
 
 <style>
 	article {

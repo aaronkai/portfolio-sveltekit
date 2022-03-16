@@ -1,0 +1,27 @@
+article.blog {
+	@apply grid gap-3;
+}
+
+.blog {
+	@apply text-stone-800;
+}
+
+.blog h1 {
+	@apply text-5xl;
+}
+
+.blog h2 {
+	@apply text-3xl;
+}
+
+.blog h3 {
+	@apply text-2xl;
+}
+
+.blog p {
+	@apply mb-2;
+}
+
+.blog a {
+	@apply text-emerald-600;
+}

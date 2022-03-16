@@ -1,26 +1,4 @@
-// import { mdsvex } from 'mdsvex';
-// import mdsvexConfig from './mdsvex.config.js';
-// import adapter from '@sveltejs/adapter-netlify';
-
-// const mode = process.env.NODE_ENV;
-// const dev = mode === 'development';
-// process.env.TAILWIND_MODE = dev ? 'watch' : 'build';
-
-// /** @type {import('@sveltejs/kit').Config} */
-// const config = {
-// 	extensions: ['.svelte', ...mdsvexConfig.extensions],
-
-// 	kit: {
-// 		adapter: adapter()
-// 	},
-
-// 	preprocess: [mdsvex(mdsvexConfig)]
-// };
-
-// export default config;
-
 import { mdsvex } from 'mdsvex';
-import adapter from '@sveltejs/adapter-netlify';
 import preprocess from 'svelte-preprocess';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -36,9 +14,7 @@ const config = {
 		mdsvex(mdsvexConfig)
 	],
 
-	kit: {
-		adapter: adapter()
-	}
+	kit: {}
 };
 
 export default config;
