@@ -30,8 +30,8 @@
 
 <main class="grid gap-16 p-6 max-w-prose">
 	<section class="grid gap-8">
-		<h1 class="font-extrabold text-stone-800 text-7xl">Blogposts</h1>
-		<fieldset class="p-4 border border-gray-500">
+		<h1 class="text-5xl font-extrabold md:text-7xl text-stone-800">Blogposts</h1>
+		<fieldset class="grid p-4 border border-gray-500">
 			<legend class="text-xl font-bold">Table of Contents</legend>
 			<ul class="ml-4 font-bold list-disc ">
 				{#each posts as post}
@@ -42,7 +42,7 @@
 			</ul>
 		</fieldset>
 	</section>
-	<section class="grid gap-8">
+	<!-- <section class="grid gap-8">
 		<header class="grid gap-2 pb-4 border-b-2">
 			<h2 class="text-4xl text-stone-800">
 				Latest Post: <br />
@@ -53,5 +53,5 @@
 		<article class="-m-6 markdown">
 			{@html posts[0].html}
 		</article>
-	</section>
+	</section> -->
 </main>
