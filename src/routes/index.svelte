@@ -54,7 +54,7 @@
 </svelte:head>
 
 <main
-	class="grid items-start h-full px-3 last:py-9 bg-stone-100 gap-9 md:grid-cols-2 md:gap-y-12 md:gap-x-12 md:p-8"
+	class="grid items-start h-full gap-16 px-3 last:py-9 bg-stone-100 md:grid-cols-2 md:gap-y-12 md:gap-x-12 md:p-8"
 >
 	<section class="grid md:grid-cols-[auto_1fr] gap-12 items-center md:col-span-2">
 		<figure class="grid items-center justify-items-center">
@@ -62,8 +62,8 @@
 		</figure>
 		<div class="grid gap-6 text-stone-800">
 			<h1 class="text-2xl md:text-5xl font-bold text-stone-800 max-w-[70vw]">
-				I'm Aaron Hubbard, a budding <a href="https://github.com/aaronkai">JavaScript Developer</a>,
-				a proud
+				I'm Aaron Hubbard, a neophite <a href="https://github.com/aaronkai">JavaScript Developer</a
+				>, a proud
 				<a href="https://www.instagram.com/p/CVJmDN-AFbQwIwD9kF2dv9l8IDtB-NtVdJMdJ40/">dad</a>, and
 				a middling
 				<a href="https://photos.app.goo.gl/pb8RjhBWJ6HPkeMx8"> fingerpicker</a>.
@@ -75,7 +75,7 @@
 		</div>
 	</section>
 	<section class="grid gap-3">
-		<header class="grid grid-cols-[3fr_1fr]">
+		<header class="flex justify-between">
 			<h1 class="text-3xl font-bold text-stone-800">Latest Posts</h1>
 			<a
 				class="flex items-center justify-center font-bold rounded shadow text-stone-100 bg-emerald-600"
@@ -95,11 +95,11 @@
 		</ul>
 	</section>
 	<section class="grid gap-3">
-		<header class="grid grid-cols-[2fr_1fr]">
+		<header class="flex justify-between">
 			<h1 class="text-3xl font-bold text-stone-800">Project Highlight</h1>
 			<a
 				class="flex items-center justify-center font-bold rounded shadow text-stone-100 bg-emerald-600"
-				href="/blogposts">All Projects ></a
+				href="/blogposts">Projects&#8594;</a
 			>
 		</header>
 		<ProjectCard project={featuredProject} />

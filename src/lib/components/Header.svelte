@@ -29,9 +29,9 @@
 
 <style>
 	a {
-		@apply items-center flex no-underline font-sans font-bold text-lg text-stone-800 px-3 h-full hover:text-emerald-500 h-10 transition duration-300 ease-in-out transform hover:text-emerald-600;
+		@apply items-center flex no-underline font-sans font-bold text-lg text-stone-800 px-2 h-full hover:text-emerald-500 h-10 transition duration-300 ease-in-out transform hover:text-emerald-600;
 	}
 	nav :first-child {
-		@apply flex items-start justify-start grow shrink pl-2;
+		@apply flex items-start justify-start grow shrink pl-1;
 	}
 </style>
