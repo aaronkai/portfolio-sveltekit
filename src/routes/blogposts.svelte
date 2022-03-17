@@ -12,7 +12,7 @@
 </script>
 
 <script>
-	// import '$lib/styles/markdown.css';
+	import '$lib/styles/markdown.css';
 
 	// get posts from props
 	export let posts;
@@ -50,7 +50,7 @@
 			</h2>
 			<h3 class="text-stone-800">{latestPostDate}</h3>
 		</header>
-		<article class="markdown ">
+		<article class="-m-6 markdown">
 			{@html posts[0].html}
 		</article>
 	</section>

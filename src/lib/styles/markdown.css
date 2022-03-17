@@ -17,3 +17,7 @@
 .markdown ul {
 	@apply list-disc list-inside;
 }
+
+.markdown .tag a {
+	@apply text-stone-100;
+}

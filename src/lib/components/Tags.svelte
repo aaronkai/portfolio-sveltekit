@@ -2,7 +2,7 @@
 	export let tags;
 </script>
 
-<div class="flex flex-wrap">
+<div class="flex flex-wrap tag">
 	{#each tags as tag}
 		<a
 			href="#"
