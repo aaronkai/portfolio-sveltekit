@@ -1,9 +1,9 @@
 .markdown h2 {
-	@apply mt-6 mb-3 text-3xl font-bold;
+	@apply mt-6 mb-3 text-3xl font-bold capitalize;
 }
 
 .markdown h3 {
-	@apply my-2 text-xl font-bold;
+	@apply my-2 text-xl font-bold capitalize;
 }
 
 .markdown p {
@@ -20,4 +20,8 @@
 
 .markdown .tag a {
 	@apply text-stone-100;
+}
+
+.markdown pre {
+	@apply my-6;
 }

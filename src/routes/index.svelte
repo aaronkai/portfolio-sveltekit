@@ -1,29 +1,33 @@
 <script context="module">
-	//fetch all posts
+	// use Vite glob import to pullin all posts
+	// This returns an object of objects with structure
+	// { pathToModule: Module, ...}
 	const allPosts = import.meta.glob('./blogposts/*.md');
-	let body = [];
+	// loop over the object & destructure the metadata from the Module as a promise
+	let blogpostMetadata = [];
 	for (let path in allPosts) {
-		body.push(
+		blogpostMetadata.push(
 			allPosts[path]().then(({ metadata }) => {
 				return { path, metadata };
 			})
 		);
 	}
 	//fetch all projects
-	let body2 = [];
+	let projectMetadata = [];
 	const allProjects = import.meta.glob('./projects/*.md');
 	for (let path in allProjects) {
-		body2.push(
+		projectMetadata.push(
 			allProjects[path]().then(({ metadata }) => {
 				return { path, metadata };
 			})
 		);
 	}
 
+	// Await the promised metadata from above.
 	// feed posts & projects to page as props
 	export const load = async () => {
-		const posts = await Promise.all(body);
-		const projects = await Promise.all(body2);
+		const posts = await Promise.all(blogpostMetadata);
+		const projects = await Promise.all(projectMetadata);
 		return {
 			props: {
 				posts,
@@ -79,7 +83,7 @@
 			<h1 class="text-3xl font-bold text-stone-800">Latest Posts</h1>
 			<a
 				class="flex items-center justify-center font-bold rounded shadow text-stone-100 bg-emerald-600"
-				href="/blogposts">Archive ></a
+				href="/blogposts">Archive&#8594;</a
 			>
 		</header>
 		<ul class="grid">

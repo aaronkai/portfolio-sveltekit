@@ -14,11 +14,11 @@ tags:
 
 I've always found it tough to work on something that I didn't think the world actually needed or needed more of. Does the world really need one more undergraduate philosophy paper on Existential Ethics? Does the world really need another to-do app? 🤔 I try to keep my eyes peeled for needs that actually exist.
 
-## Spiritual Journey
+## The Long and Winding Road
 
 I've always been a seeker. I try to live by a code, and I take ethics seriously. Very recently I've been trying out Catholic Mass. I'm not sure how it's all going to work out, but as I was looking around I discovered these _Medititaions on Lent_ by St. Thomas Aquinas. It seemed that they were recorded either in weird formats or on ancient websites. I set about putting them in a static site so I could read them easily. Hopefully, others will benefit as well.
 
-## Astro
+## Failure to Launch
 
 I really want to like Astro 🚀 . I like the idea of "islands of reactivity". I like the intelligent defaults and the out-of-the-box functionality. _However_, while one benefits from these great features, one pays in full eventually.
 
@@ -28,7 +28,7 @@ On the bright side, I did get to file my first open-source PR!
 
 I really like the project, but...
 
-## Boring Tech
+## Choose Boring Tech?
 
 I was listening to [this](https://shoptalkshow.com/506/) episode of ShopTalk recently, and Dave mentioned a talk I hadn't heard of before: [Choose Boring Technology](https://boringtechnology.club).
 

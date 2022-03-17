@@ -31,27 +31,23 @@
 <main class="grid gap-16 p-6 max-w-prose">
 	<section class="grid gap-8">
 		<h1 class="text-5xl font-extrabold md:text-7xl text-stone-800">Blogposts</h1>
-		<fieldset class="grid p-4 border border-gray-500">
+		<fieldset class="grid p-4 border border-stone-800 text-stone-800">
 			<legend class="text-xl font-bold">Table of Contents</legend>
 			<ul class="ml-4 font-bold list-disc ">
 				{#each posts as post}
 					<li class="py-1 underline ">
-						<a class="text-emerald-600" href={post.path}>{post.meta.title}</a>
+						<a
+							class="transition duration-300 ease-in-out transform text-emerald-600 hover:text-emerald-800"
+							href={post.path}>{post.meta.title}</a
+						>
 					</li>
 				{/each}
 			</ul>
 		</fieldset>
 	</section>
-	<!-- <section class="grid gap-8">
-		<header class="grid gap-2 pb-4 border-b-2">
-			<h2 class="text-4xl text-stone-800">
-				Latest Post: <br />
-				{posts[0].meta.title}
-			</h2>
-			<h3 class="text-stone-800">{latestPostDate}</h3>
-		</header>
+	<section class="grid gap-8">
 		<article class="-m-6 markdown">
 			{@html posts[0].html}
 		</article>
-	</section> -->
+	</section>
 </main>

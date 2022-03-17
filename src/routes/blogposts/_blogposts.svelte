@@ -20,7 +20,7 @@
 		<img class="shadow" src={img} alt="project" />
 	</figure> -->
 	<header>
-		<h1 class="mt-6 mb-4 text-5xl font-bold">{title}</h1>
+		<h1 class="mt-6 mb-4 text-5xl font-bold capitalize">{title}</h1>
 		<p class="text-xl">Published: {new Date(date).toLocaleDateString()}</p>
 	</header>
 	<Tags {tags} />

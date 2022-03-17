@@ -1,4 +1,6 @@
-// posts.json.js
+// blogposts.json.js
+// Much code borrowed from https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
+
 export const get = async () => {
 	const allPostFiles = import.meta.glob('./blogposts/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
