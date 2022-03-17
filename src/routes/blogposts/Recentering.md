@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/blogLayout.astro
 title: Recentering My Focus
 tags:
   - HackerRank

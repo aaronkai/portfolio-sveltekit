@@ -11,7 +11,7 @@ tags:
   - Supabase
 ---
 
-## "Well I don't know what the world may want..."
+## My favorite project yet!
 
 I like exercise. Exercise has been one of the few constants in my adult life. Ever since I learned in my 20s that I really feel much better and happier if I work out, I've made a special point to make time to do it almost every day.
 

@@ -62,8 +62,8 @@
 		</figure>
 		<div class="grid gap-6 text-stone-800">
 			<h1 class="text-2xl md:text-5xl font-bold text-stone-800 max-w-[70vw]">
-				I'm Aaron Hubbard, a good <a href="https://github.com/aaronkai">JavaScript Developer</a>, a
-				great
+				I'm Aaron Hubbard, a budding <a href="https://github.com/aaronkai">JavaScript Developer</a>,
+				a proud
 				<a href="https://www.instagram.com/p/CVJmDN-AFbQwIwD9kF2dv9l8IDtB-NtVdJMdJ40/">dad</a>, and
 				a middling
 				<a href="https://photos.app.goo.gl/pb8RjhBWJ6HPkeMx8"> fingerpicker</a>.
@@ -88,7 +88,7 @@
 					<h2 class="my-3 text-2xl font-bold text-stone-800">
 						<a href={`${path.replace('.md', '')}`}>{title} </a>
 					</h2>
-					<p class="text-stone-800">{description}</p>
+					<p class="mb-1 text-stone-800">{description}</p>
 					<p class="mb-3 text-stone-800">{new Date(date).toLocaleDateString()}</p>
 				</li>
 			{/each}

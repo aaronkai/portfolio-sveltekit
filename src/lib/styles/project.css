@@ -1,0 +1,19 @@
+.project h2 {
+	@apply mt-6 mb-3 text-3xl font-bold;
+}
+
+.project h3 {
+	@apply my-2 text-xl font-bold;
+}
+
+.project p {
+	@apply mb-2;
+}
+
+.project a {
+	@apply text-emerald-600;
+}
+
+.project ul {
+	@apply list-disc list-outside;
+}

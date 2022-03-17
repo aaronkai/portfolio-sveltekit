@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/blogLayout.astro
 title: Astro -- First Impressions
 tags:
   - Astro

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/blogLayout.astro
 tags:
   - Open-Props
 
