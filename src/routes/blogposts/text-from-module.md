@@ -1,5 +1,5 @@
 ---
-title: How to get markdown text from a Vite Glob Import
+title: How To Get Markdown Text from a Vite Glob Import
 date: 2022-03-17 16:00:00
 description: Working out the last mile of a coding problem.
 tags:
