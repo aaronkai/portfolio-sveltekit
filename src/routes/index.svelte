@@ -64,7 +64,7 @@
 		<figure class="grid items-center justify-items-center">
 			<img class="selfie max-h-[40vh]" src={Selfie} alt="selfie" />
 		</figure>
-		<div class="grid gap-6 text-stone-800">
+		<div class="grid gap-6 px-6 text-stone-800">
 			<h1 class="text-2xl md:text-5xl font-bold text-stone-800 max-w-[70vw]">
 				I'm Aaron Hubbard, a neophite <a href="https://github.com/aaronkai">JavaScript Developer</a
 				>, a proud
