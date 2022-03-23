@@ -9,7 +9,7 @@
 </script>
 
 <nav
-	class="flex flex-wrap items-end self-start justify-end py-2 border-b-2 md:p-4 justify-self-stretch border-emerald-700 bg-stone-50"
+	class="flex flex-wrap items-end self-start justify-end py-2 border-b-2 shadow md:p-4 justify-self-stretch border-emerald-700 bg-stone-50"
 >
 	<a href="/"
 		><Logo

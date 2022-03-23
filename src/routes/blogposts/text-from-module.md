@@ -1,6 +1,6 @@
 ---
 title: How To Get Markdown Text from a Vite Glob Import
-date: 2022-03-17 16:00:00
+date: 2022-03-17 16:00:01
 description: Working out the last mile of a coding problem.
 tags:
   - SvelteKit
