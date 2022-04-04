@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/blogLayout.astro
 title: TypeScript For The Win!
 tags:
   - TypeScript

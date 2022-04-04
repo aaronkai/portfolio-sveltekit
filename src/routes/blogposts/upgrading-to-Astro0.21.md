@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/blogLayout.astro
 tags:
   - Astro v0.21
 date: 2021-12-01 16:30:00
