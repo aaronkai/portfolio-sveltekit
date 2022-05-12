@@ -1,13 +1,11 @@
 ---
-title: Putting Astro on a Rocket for Mars
+title: Putting Astro on a Rocket for Mars 🚀
 tags:
   - SvelteKit
   - Astro
 date: 2022-05-11 16:00:00
 description: Moving a site from Astro to SvelteKit
 ---
-
-# Putting Astro on a Rocket for Mars
 
 ## Astro: not quite out of the stratosphere
 
