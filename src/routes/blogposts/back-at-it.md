@@ -4,7 +4,8 @@ tags:
   - SpookySets
   - TailwindCSS
   - Cloudflare
-date: 202-06-24 17:00:00
+date: 2022-06-24 17:00:00
+description: I'm Back!
 ---
 
 # Nose to the Grindstone Once More
@@ -24,6 +25,8 @@ I've been continuing to dog-food my SpookySets workout app, and have a list of i
 Initially, I tried just using @apply methods in my Svelte style blocks to convert my mix of vanilla CSS and OpenProps to Tailwinds. This worked to a point, but VSCode was throwing errors, and upon looking into them, I learned that Tailwind really doesn't want you to code this way. I see their point: you are basically recreating the structure of CSS. I think they underplay the frustration attendant with alt-clicking the mouse onto 5 HTML elements and pasting the utility classes in, but that's exactly what I did, for all 6 pages and a dozen components.
 
 It took me about a day. I was a little annoyed to be going back and redoing the CSS for the third time on this project, but it was a great way to re-acquaint myself with the code.
+
+hen it was time to push to Netlify, I was met with cryptic build errors. I took the opportunity to update my packages. No luck. I tried starting a new project and pasting in my few config files and src folder. Still no luck in Netlify. I tried Cloudflare Pages and it worked on the first try. Since I've been porting over apps to Cloudflare for a little while now, I took the opportunity to move the page over to Cloudflare. As of now, SpookySets is back up and running, now in TailwindCSS on Cloudflare!
 
 ## What's next? E-commerce!
 
