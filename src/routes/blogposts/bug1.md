@@ -36,3 +36,7 @@ Oh bother. Looks like I set prerender=true in svelte.config at some point. Cloud
 ## Going forward
 
 I think this might be a good test case for the testing library that is now shipping with Svelte. It would be cool to learn how to stub out the Google Calendar API.
+
+## Follow up
+
+I checked on this the following day. The date in the footer was current for all pages, which means that I was not correctly understanding how prerendering works. I expected the time in the footer of the index page to be current when I hit the index page, but to the build time for the static pages that were not the index page. Perhaps the client-side router is keeping everything but the text section intact when it navigates between pages. I'm going to dig in further.
