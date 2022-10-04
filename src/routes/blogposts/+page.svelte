@@ -1,22 +1,10 @@
-<script context="module">
-	// feed posts to page as props
-	export const load = async ({ fetch }) => {
-		const posts = await fetch('./blogposts.json');
-		const allPosts = await posts.json();
-		return {
-			props: {
-				posts: allPosts
-			}
-		};
-	};
-</script>
-
 <script>
 	import '$lib/styles/markdown.css';
 
 	// get posts from props
-	export let posts;
-
+	export let data;
+	let posts = data.posts.sortedPosts;
+	console.log(posts[0].path.split('/'));
 	const latestPostDate = new Date(posts[0].meta.date).toLocaleDateString();
 </script>
 
@@ -38,7 +26,7 @@
 					<li class="py-1 underline ">
 						<a
 							class="transition duration-300 ease-in-out transform text-emerald-600 hover:text-emerald-800"
-							href={post.path}>{post.meta.title}</a
+							href={`/${post.path.split('/')[1]}/${post.path.split('/')[2]}`}>{post.meta.title}</a
 						>
 					</li>
 				{/each}

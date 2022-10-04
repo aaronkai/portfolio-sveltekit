@@ -1,30 +1,7 @@
-<script context="module">
-	let body = [];
-	const allProjects = import.meta.glob('./projects/*.md');
-	for (let path in allProjects) {
-		body.push(
-			allProjects[path]().then(({ metadata }) => {
-				return { path, metadata };
-			})
-		);
-	}
-
-	// feed posts to page as props
-	export const load = async () => {
-		const projects = await Promise.all(body);
-		return {
-			props: {
-				projects
-			}
-		};
-	};
-</script>
-
 <script>
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	export let projects;
-
-	const dateSortedProjects = projects.sort((project1, project2) => {
+	export let data;
+	const dateSortedProjects = data.projects.sort((project1, project2) => {
 		return new Date(project2.metadata.date) - new Date(project1.metadata.date);
 	});
 </script>
