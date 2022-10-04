@@ -5,7 +5,7 @@ tags:
   - Vite
   - SvelteKit
 date: 2022-10-04 17:00:00
-description: Making Money 💸
+description: Returning to React and SvelteKit
 ---
 
 ## New Project: Another Workout Planner
