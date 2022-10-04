@@ -8,8 +8,6 @@ date: 2022-06-24 17:00:00
 description: I'm Back!
 ---
 
-# Nose to the Grindstone Once More
-
 ## Life Happens
 
 I haven't really done much coding since my Dad died. I think it was enough for me just to do my dayjob and be with my family. Processing grief takes many forms I suppose. For me it was playing Elden Ring and pursuing Catholicism in my free time. I've found both very rewarding.

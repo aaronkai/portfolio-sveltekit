@@ -52,7 +52,7 @@
 			{#each mostRecentPosts as { path, metadata: { title, description, date } }}
 				<li class="border-t border-stone-400">
 					<h2 class="my-3 text-2xl font-bold text-stone-800">
-						<a href={`${path.replace('.md', '')}`}>{title} </a>
+						<a href={`/${path.split('/')[1]}/${path.split('/')[2]}`}>{title}</a>
 					</h2>
 					<p class="mb-1 text-stone-800">{description}</p>
 					<p class="mb-3 text-stone-800">{new Date(date).toLocaleDateString()}</p>

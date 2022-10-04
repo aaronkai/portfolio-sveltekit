@@ -16,15 +16,12 @@
 </svelte:head>
 
 <article class="grid w-full gap-6 p-6 text-stone-800 max-w-prose">
-	<!-- <figure>
-		<img class="shadow" src={img} alt="project" />
-	</figure> -->
 	<header>
 		<h1 class="mt-6 mb-4 text-5xl font-bold capitalize">{title}</h1>
 		<p class="text-xl">Published: {new Date(date).toLocaleDateString()}</p>
 	</header>
 	<Tags {tags} />
-	<div class="markdown">
+	<div class="markdown blog">
 		<slot />
 	</div>
 </article>

@@ -1,5 +1,9 @@
+.markdown h1 {
+	@apply mt-6 mb-3 text-4xl underline font-bold capitalize max-w-[20ch];
+}
+
 .markdown h2 {
-	@apply mt-6 mb-3 text-3xl font-bold capitalize;
+	@apply mt-6 mb-3 text-3xl font-bold capitalize max-w-[20ch];
 }
 
 .markdown h3 {
