@@ -4,7 +4,7 @@ client: Self
 date: 2021-11-09 16:00:00
 img: /projects/spooky-sets.png
 description: A workout creator and tracker, with user accounts and a spoooky Halloween theme
-link: https://www.spookysets.com
+link: https://spookysets.aaronhubbard.dev
 tags:
   - SvelteKit
   - Svelte
