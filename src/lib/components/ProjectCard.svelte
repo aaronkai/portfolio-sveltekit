@@ -16,7 +16,7 @@
 		</h2>
 		<p class="text-center text-stone-900 ">{project.metadata.description}</p>
 		<div class="flex justify-around">
-			<a href={project.path.slice(2, -3)}>Details</a>
+			<a href={`/${project.path.split('/')[1]}/${project.path.split('/')[2]}`}>Details</a>
 			<a href={project.metadata.link}>Go To Site</a>
 		</div>
 	</section>
