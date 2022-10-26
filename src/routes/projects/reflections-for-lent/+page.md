@@ -1,7 +1,7 @@
 ---
 title: Reflections For Lent
 date: 2022-03-17 16:00:00
-img: /projects/lent2.png
+img: /projects/lent3.png
 description: A static site, built in Astro, to display the writing of St. Thomas Aquinas on Lent
 link: https://lent.immanent.dev
 tags:
@@ -41,3 +41,7 @@ I'm not sure I totally agree, but it's giving me some material to chew on. I thi
 ## Theming
 
 This was the first project I wrote multiple themes for 🌔 🔄 🌞. I used Open Props, and used the method suggested by Adam Argyle. I think it worked out very well. However, my feelings about Open Props somewhat mirror my thoughts on Astro. Both are awesome projects that don't seem ready for mass adoption.
+
+## Update
+
+In the end, I got grumpy and ripped out both Astro and Open Props. Regarding Astro, I finally hit one bug too many and decided the juice wasn't worth the squeeze. I ported the project to SvelteKit, making use of endpoints to serve the daily reflections. More or less the same thing happened with Open Props. At this point, I don't like opening a project and finding that I didn't use Tailwinds. It's easy, it's fast, and I'm familiar with it. I'm done thinking about this one for a while.
