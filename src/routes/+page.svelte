@@ -32,7 +32,7 @@
 				>, a proud
 				<a href="https://www.instagram.com/p/CVJmDN-AFbQwIwD9kF2dv9l8IDtB-NtVdJMdJ40/">dad</a>, and
 				a middling
-				<a href="https://photos.app.goo.gl/pb8RjhBWJ6HPkeMx8"> fingerpicker</a>.
+				<a href="https://https://youtube.com/shorts/gTgbVU5cQaA"> fingerpicker</a>.
 			</h1>
 			<p class="md:text-xl max-w-prose">
 				By day, I'm an application administrator for NOAA's CLASS project. In my free-time, I'm
