@@ -3,7 +3,7 @@ title: Bacchus Atlas Expanded
 client: Self
 date: 2021-11-06 16:00:00
 img: /projects/bacchus_atlas_expanded_screencap.png
-description: A React app for cataloging and geo-locating wine with a GraphQL  and KeystoneJS backend.
+description: A React app for cataloging and geo-locating wine with a GraphQL  and KeystoneJS backend. Sadly, the site is no longer active.
 link: https://www.bacchusatlas.com/
 tags:
   - Next.js
