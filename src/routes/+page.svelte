@@ -30,8 +30,7 @@
 			<h1 class="text-2xl md:text-5xl font-bold text-stone-800 max-w-[70vw]">
 				I'm Aaron Hubbard, a neophite <a href="https://github.com/aaronkai">JavaScript Developer</a
 				>, a proud
-				<a href="https://www.instagram.com/p/CVJmDN-AFbQwIwD9kF2dv9l8IDtB-NtVdJMdJ40/">dad</a>, and
-				a middling
+				<a href="https://photos.app.goo.gl/rKDxed8JgpS13ci88">dad</a>, and a middling
 				<a href="https://youtube.com/shorts/gTgbVU5cQaA?feature=share"> fingerpicker</a>.
 			</h1>
 			<p class="md:text-xl max-w-prose">
