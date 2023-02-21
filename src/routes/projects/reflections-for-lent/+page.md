@@ -3,7 +3,7 @@ title: Reflections For Lent
 date: 2022-03-17 16:00:00
 img: /projects/lent3.png
 description: A static site, built in Astro, to display the writing of St. Thomas Aquinas on Lent
-link: https://lent.immanent.dev
+link: https://lent.aaronhubbard.dev
 tags:
   - Astro
   - Theming
