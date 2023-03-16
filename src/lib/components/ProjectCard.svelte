@@ -2,11 +2,11 @@
 	export let project;
 </script>
 
-<div class="grid my-3 border rounded shadow bg-stone-200">
+<div class="grid grid-rows-[auto,_1fr] my-3 border rounded shadow bg-stone-200">
 	<figure>
 		<img
 			src={project.metadata.img}
-			class="w-full h-full border-b-2 rounded-t shadow border-stone-500"
+			class="w-full  border-b-2 rounded-t shadow border-stone-500"
 			alt="screenshot of project"
 		/>
 	</figure>
