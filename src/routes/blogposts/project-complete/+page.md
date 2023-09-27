@@ -5,7 +5,7 @@ tags:
   - TailwindCSS
   - Astro 2.0
 date: 2023-09-27 17:00:00
-description: The little spec site that could
+description: The Little Spec Site That Could
 ---
 
 ## A Spec Site Finally Gets Built!
