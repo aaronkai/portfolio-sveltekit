@@ -11,7 +11,7 @@
 	const mostRecentPosts = dateSortedPosts.slice(0, 3);
 	//pick a project to be the featured project
 	const [featuredProject] = data.projects.filter((project) => {
-		return project.metadata.title === 'Spooky Sets';
+		return project.metadata.title === 'F3 Asheville';
 	});
 </script>
 
