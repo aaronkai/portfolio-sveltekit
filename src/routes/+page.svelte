@@ -41,7 +41,7 @@
 	</section>
 	<section class="grid gap-3">
 		<header class="flex justify-between">
-			<h1 class="text-3xl font-bold text-stone-800">Latest Posts!</h1>
+			<h1 class="text-3xl font-bold text-stone-800">Latest Posts</h1>
 			<a
 				class="flex items-center justify-center font-bold rounded shadow text-stone-100 bg-emerald-600"
 				href="/blogposts">Archive&#8594;</a
