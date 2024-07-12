@@ -31,7 +31,7 @@
 				I'm Aaron Hubbard, a neophite <a href="https://github.com/aaronkai">JavaScript Developer</a
 				>, a proud
 				<a href="https://photos.app.goo.gl/rKDxed8JgpS13ci88">dad</a>, and a middling
-				<a href="https://youtube.com/shorts/gTgbVU5cQaA?feature=share"> fingerpicker</a>.
+				<a href="https://youtu.be/gRdLgY4fME0?si=4H0e4PsOxbLFKSVZ"> fingerpicker</a>.
 			</h1>
 			<p class="md:text-xl max-w-prose">
 				By day, I'm an application administrator for NOAA's CLASS project. In my free-time, I'm

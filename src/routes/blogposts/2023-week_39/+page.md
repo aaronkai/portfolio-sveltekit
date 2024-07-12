@@ -1,5 +1,5 @@
 ---
-title: Week 39 of 2023
+title: 📓 Week 39 of 2023
 tags:
   - aws
   - cloudflare
